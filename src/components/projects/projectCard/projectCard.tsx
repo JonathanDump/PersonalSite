@@ -17,10 +17,10 @@ const ProjectCard = ({ project }: { project: IProject }) => {
           height={1080}
         />
         <div className={cl.buttons}>
-          <Link className="linkButton" href={project.git}>
+          <Link className="linkButton" target="_blank" href={project.git}>
             Code
           </Link>
-          <Link className="linkButton" href={project.demo}>
+          <Link className="linkButton" target="_blank" href={project.demo}>
             Demo
           </Link>
         </div>

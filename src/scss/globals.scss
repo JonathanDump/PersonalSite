@@ -16,11 +16,11 @@ a {
   font-size: inherit;
   display: inline-block;
   position: relative;
-}
 
-a:hover {
-  background-color: black;
-  color: $background-color-main;
+  &:hover {
+    background-color: black !important;
+    color: $background-color-main;
+  }
 }
 
 .header {

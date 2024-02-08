@@ -1,0 +1,17 @@
+.contacts {
+  .info {
+    border: $border;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1px;
+    background-color: black;
+
+    .social {
+      font-size: 20px;
+      text-decoration: none;
+      padding: $padding;
+      background-color: $background-color-main;
+    }
+  }
+}

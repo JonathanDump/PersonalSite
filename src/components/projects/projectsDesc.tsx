@@ -144,12 +144,12 @@ export const projects: IProject[] = [
     git: "https://github.com/JonathanDump/Battleship",
     demo: "https://jonathandump.github.io/Battleship/",
     description: (
-      <>Battleship game against bot. Place your shops manually or by random.</>
+      <>Battleship game against bot. Place your ships manually or by random.</>
     ),
   },
 
   {
-    name: "Wether App",
+    name: "Weather App",
     type: "Pet",
     image: "/projects/wetherApp.png",
     techStack: ["Javascript", "SASS"],

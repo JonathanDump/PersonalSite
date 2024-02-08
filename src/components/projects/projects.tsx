@@ -7,8 +7,10 @@ import { getValidClassNames } from "@/helpers/getValidClassNames";
 const Projects = () => {
   return (
     <div className={cl.wrapper}>
-      <div className={cl.projects} id="projects">
-        <div className="header">Projects</div>
+      <div className={cl.projects}>
+        <div className="header" id="projects">
+          Projects
+        </div>
         <div className={cl.projectCardsContainer}>
           {projects.map((project, i) => (
             <ProjectCard key={i} project={project} />
