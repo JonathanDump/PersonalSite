@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+
+    .projectCardsContainer {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      display: grid;
+      gap: 30px;
+      border: $border;
+      border-top: 0;
+      border-bottom: 0;
+    }
+  }
+
+  .allLink {
+    align-self: flex-end;
+    width: fit-content;
+    border: $border;
+    border-top: 0;
+  }
+}

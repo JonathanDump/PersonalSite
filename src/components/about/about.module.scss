@@ -1,10 +1,15 @@
-@import "/src/scss/variables";
-
 .about {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 100%;
+  // padding: 1px;
+  border: $border;
 
   .bio {
     display: flex;
@@ -12,6 +17,8 @@
     align-items: flex-end;
     justify-content: space-between;
     gap: 16px;
+    border-bottom: $border;
+    // padding-bottom: 1px;
 
     .description {
       max-width: 50%;
@@ -35,13 +42,13 @@
     flex-direction: column;
     gap: 8px;
 
-    .header {
-      font-size: 30px;
-      border: $border;
-      background-color: black;
-      color: $background-color-main;
-      width: fit-content;
-    }
+    // .header {
+    //   font-size: $font-size-header;
+    //   border: $border;
+    //   background-color: black;
+    //   color: $background-color-main;
+    //   width: fit-content;
+    // }
 
     .skillCardsContainer {
       display: flex;
@@ -53,7 +60,7 @@
 }
 
 @media (max-width: 600px) {
-  .about {
+  .info {
     .bio {
       flex-direction: column-reverse;
       align-items: center;

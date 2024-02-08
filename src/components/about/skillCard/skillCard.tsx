@@ -1,3 +1,4 @@
+import Tech from "@/components/tech/tech";
 import cl from "./skillCard.module.scss";
 
 interface Props {
@@ -11,15 +12,11 @@ const SkillCard: React.FC<Props> = ({ title, skills }) => {
       <div className={cl.title}>{title}</div>
       <div className={cl.skillsContainer}>
         {skills.map((skill, i) => (
-          <Skill key={i} skill={skill} />
+          <Tech key={i} tech={skill} />
         ))}
       </div>
     </div>
   );
-};
-
-const Skill = ({ skill }: { skill: string }) => {
-  return <div className={cl.skill}>{skill}</div>;
 };
 
 export default SkillCard;

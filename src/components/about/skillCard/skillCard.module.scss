@@ -1,7 +1,5 @@
-@import "/src/scss/variables";
-
 .skillCard {
-  padding: 2px;
+  padding: $padding;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -16,12 +14,6 @@
     flex-wrap: wrap;
     gap: 8px;
   }
-}
-
-.skill {
-  font-size: 20px;
-  border: $border;
-  padding: 1px;
 }
 
 // @media (max-width: 600px) {

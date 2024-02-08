@@ -1,0 +1,89 @@
+.projectCard {
+  display: flex;
+  border-top: $border;
+  border-bottom: $border;
+  gap: 2px;
+  width: fit-content;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: $background-color-main;
+  width: 100%;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .infoBlock {
+      display: flex;
+      gap: 8px;
+      padding: $padding;
+
+      .label,
+      .value {
+        text-align: justify;
+        font-size: 18px;
+      }
+
+      .label {
+        max-width: 120px;
+        min-width: 116px;
+        width: 100%;
+        font-weight: 600;
+      }
+
+      .value {
+        gap: 8px;
+      }
+
+      .tech {
+        display: flex;
+        flex-wrap: wrap;
+        > div {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .imageWrapper {
+    width: fit-content;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    border-left: $border;
+    border-bottom: $border;
+
+    .image {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      margin-left: auto;
+      border-bottom: $border;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .projectCard {
+    .imageWrapper {
+      border-left: 0;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .projectCard {
+    .info {
+      .infoBlock {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+  }
+}

@@ -15,6 +15,10 @@
     gap: 32px;
     font-size: 20px;
     gap: max(8px, 3vw);
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 

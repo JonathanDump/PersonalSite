@@ -1,6 +1,11 @@
 @import "./normalize.scss";
 @import "./variables";
 
+:root {
+  color-scheme: dark;
+  color: black;
+}
+
 body {
   min-height: 100vh;
   background-color: $background-color-main;
@@ -9,7 +14,6 @@ body {
 a {
   color: black;
   font-size: inherit;
-  text-decoration: none;
   display: inline-block;
   position: relative;
 }
@@ -19,20 +23,24 @@ a:hover {
   color: $background-color-main;
 }
 
-// a::after {
-//   content: "";
-//   position: absolute;
-//   width: 100%;
-//   transform: scaleX(0);
-//   height: 2px;
-//   bottom: 0;
-//   left: 0;
-//   background-color: black;
-//   transform-origin: bottom right;
-//   transition: transform 0.15s ease-out;
-// }
+.header {
+  font-size: $font-size-header;
+  border: $border;
+  background-color: black;
+  color: $background-color-main;
+  width: fit-content;
+}
 
-// a:hover::after {
-//   transform: scaleX(1);
-//   transform-origin: bottom left;
-// }
+.linkButton {
+  text-decoration: none;
+  color: $background-color-main;
+  background-color: black;
+  font-size: 20px;
+  padding: 0 2px;
+  width: 100%;
+
+  &:hover {
+    background-color: $background-color-main;
+    color: black;
+  }
+}
