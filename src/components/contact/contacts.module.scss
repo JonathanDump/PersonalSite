@@ -13,5 +13,11 @@
       padding: $padding;
       background-color: $background-color-main;
     }
+
+    .link {
+      &:hover {
+        background-color: black;
+      }
+    }
   }
 }

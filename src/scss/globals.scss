@@ -18,7 +18,7 @@ a {
   position: relative;
 
   &:hover {
-    background-color: black !important;
+    background-color: black;
     color: $background-color-main;
   }
 }
