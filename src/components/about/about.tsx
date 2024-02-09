@@ -22,6 +22,7 @@ const About = () => {
 
           <Image
             className={cl.img}
+            priority={true}
             alt=""
             src="/me.jpg"
             width={500}
