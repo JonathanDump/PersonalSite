@@ -1,2 +1,2 @@
-## Personal site with portfolio and contact info.
+Personal site with portfolio and contact info.
 
