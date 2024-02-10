@@ -11,7 +11,7 @@ const Header = () => {
         </Link>
         <Link href={"/#projects"}>Projects</Link>
         <Link href={"/#contact"}>Contacts</Link>
-        <Link href={"https://flowcv.com/resume/cvm2dmn3el"} target="_blank">
+        <Link href={"/resume.pdf"} target="_blank">
           Resume
         </Link>
       </div>
