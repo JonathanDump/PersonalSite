@@ -24,12 +24,6 @@
 
 @media (max-width: 600px) {
   .header {
-    .name {
-      font-size: 18px;
-    }
-
-    .links {
-      font-size: 16px;
-    }
+    flex-wrap: wrap;
   }
 }
