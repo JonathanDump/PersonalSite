@@ -2,15 +2,29 @@ import Link from "next/link";
 
 export interface IProject {
   name: string;
-  image: string;
+  image?: string;
   type: "Commercial" | "Pet";
   techStack: string[];
   description: string | React.ReactNode;
-  git: string;
-  demo: string;
+  git?: string;
+  demo?: string;
 }
 
 export const projects: IProject[] = [
+  {
+    name: "NDA(IGaming)",
+    type: "Commercial",
+    techStack: ["Nest.js", "Typescript", "SCSS", "RxJs"],
+    description: (
+      <>
+        Currently working on this competitive video game platform with the
+        following responsibilities: Developing a comprehensive UI kit for the
+        platform. Designing and implementing screens based on Figma prototypes.
+        Integrating frontend interfaces with backend services to ensure seamless
+        functionality.
+      </>
+    ),
+  },
   {
     name: "TanPoPo",
     image: "/projects/tanPoPo.png",

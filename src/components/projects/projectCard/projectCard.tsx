@@ -8,23 +8,25 @@ import Link from "next/link";
 const ProjectCard = ({ project }: { project: IProject }) => {
   return (
     <div className={cl.projectCard}>
-      <div className={cl.imageWrapper}>
-        <Image
-          alt=""
-          src={project.image}
-          className={cl.image}
-          width={1920}
-          height={1080}
-        />
-        <div className={cl.buttons}>
-          <Link className="linkButton" target="_blank" href={project.git}>
-            Code
-          </Link>
-          <Link className="linkButton" target="_blank" href={project.demo}>
-            Demo
-          </Link>
+      {project.image && (
+        <div className={cl.imageWrapper}>
+          <Image
+            alt=""
+            src={project.image}
+            className={cl.image}
+            width={1920}
+            height={1080}
+          />
+          <div className={cl.buttons}>
+            <Link className="linkButton" target="_blank" href={project.git!}>
+              Code
+            </Link>
+            <Link className="linkButton" target="_blank" href={project.demo!}>
+              Demo
+            </Link>
+          </div>
         </div>
-      </div>
+      )}
 
       <div className={cl.info}>
         <div className={cl.infoBlock}>
